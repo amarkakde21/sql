@@ -1,0 +1,21 @@
+-- common table expression
+WITH NAME_FOR_SUMMARY_DATA 
+AS
+(SELECT statement)
+SELECT COLUMNS
+FROM NAME_FOR_SUMMARY_DATA
+WHERE CONDITION(
+    SELECT COLUMNS
+    FROM NAME_FOR_SUMMARY_DATA
+)
+[ORDER BY COLUMNS];
+
+-- cursor
+-- declare cursor, open cursor, fetch cursor, close cursor
+DECLARE CURSOR_NAME CURSOR FOR SELECT_STATEMENT;
+-- open cursor
+OPEN CURSOR_NAME;
+-- fetch cursor
+FETCH CURSOR_NAME INTO VARIABLE_LIST;
+CLOSE CURSOR_NAME;
+
